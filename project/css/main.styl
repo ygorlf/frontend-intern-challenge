@@ -1,0 +1,180 @@
+/* Variables & Base Styles */
+
+primary-color = #aa1423
+second-color = #777
+third-color = #eee
+
+*:before
+*:after
+*
+	box-sizing border-box
+
+body
+	margin 0
+	font 16px/1.5 'Roboto', sans-serif
+	color primary-color
+
+h1
+h2
+	text-align center
+
+h2
+	font 2.5em 'Roboto Slab', sans-serif
+	margin 0 0 .25em 0
+
+p
+	max-width 550px
+	margin 0 auto
+	text-align center
+
+a
+	text-decoration none
+
+ul
+	list-style none
+
+/* Wrapper Styles */
+.wrapper
+	width 70%
+	max-width 1440px
+	margin 0 auto
+
+/* Header Styles */
+.main-header
+	width 100%;
+	height 50px
+	margin 0
+
+	.logo
+		margin-top -5px
+		text-indent -9999px
+		background url('../../Assets/logo-chaordic.png') no-repeat center
+
+/* Hero Section */
+.hero-section
+	margin 0
+	padding 180px 0
+	text-align center
+
+	color white
+	background url('../../Assets/background-home.jpg') no-repeat
+	background-size cover
+
+	.hero-form
+		margin 6em auto
+
+		.hero-form__link
+			width 50%
+			margin 0 .5em 0 0
+			padding 5px
+			font-size 1.2em
+			color orange
+			border none
+			border-bottom 2px solid orange
+			background none
+
+			&::-webkit-input-placeholder
+				color orange
+
+		.hero-form__btn-submit
+			padding 10px
+			cursor pointer
+			text-transform uppercase
+			color white
+			border none
+			background orange
+
+/* Links Section */
+.links-section
+	padding 80px 0
+
+	h2
+		text-transform uppercase
+	
+	.links-list
+		width 55%
+		margin 2em auto 0
+
+		.link
+			display flex
+			justify-content space-between
+			margin 0 0 1em 0
+			padding 5px
+			border-bottom 1px solid third-color
+
+			.link__url
+				color primary-color
+
+			.link__number
+				color second-color
+
+/* Hits Section */
+.hits-section
+	position relative
+	padding 80px 0
+	text-align center
+	background third-color
+
+	&::before
+		content ''
+		width 0
+		height 0
+		position absolute
+		top 0
+		left 50%
+		transform translateX(-50%)
+		border-left 50px solid transparent
+		border-right 50px solid transparent
+		
+		border-top 50px solid white
+
+	h2
+		text-transform uppercase
+
+	.links-hits
+		width 250px
+		display block
+		margin 1.5em auto 0.5em
+		padding 5px
+		text-align center
+		font-size 1.7em
+		
+		border-radius 5px
+		background white
+		border 1px solid third-color
+
+	.links-hits-description
+		color second-color
+
+/* Footer Styles... */
+.footer
+	height 50px
+
+	.wrapper
+		display flex
+		justify-content space-between
+		align-items center
+
+	.footer-link
+		font-size 1.5em
+		color primary-color
+
+	.social-links li
+		display inline-block
+
+	.social-links a
+		display inline-block
+		margin 0 5px
+		text-indent -9999px
+		color third-color
+
+	.social-links__twitter
+	.social-links__facebook
+		width 26px
+		height 26px
+
+	.social-links__twitter
+		background url('../../Assets/icon-twitter.png')
+
+	.social-links__facebook
+		background url('../../Assets/icon-facebook.png')

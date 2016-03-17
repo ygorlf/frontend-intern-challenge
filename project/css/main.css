@@ -1,0 +1,173 @@
+/* Variables & Base Styles */
+*:before,
+*:after,
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font: 16px/1.5 'Roboto', sans-serif;
+  color: #aa1423;
+}
+h1,
+h2 {
+  text-align: center;
+}
+h2 {
+  font: 2.5em 'Roboto Slab', sans-serif;
+  margin: 0 0 0.25em 0;
+}
+p {
+  max-width: 550px;
+  margin: 0 auto;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+/* Wrapper Styles */
+.wrapper {
+  width: 70%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+/* Header Styles */
+.main-header {
+  width: 100%;
+  height: 50px;
+  margin: 0;
+}
+.main-header .logo {
+  margin-top: -5px;
+  text-indent: -9999px;
+  background: url("../../Assets/logo-chaordic.png") no-repeat center;
+}
+/* Hero Section */
+.hero-section {
+  margin: 0;
+  padding: 180px 0;
+  text-align: center;
+  color: #fff;
+  background: url("../../Assets/background-home.jpg") no-repeat;
+  background-size: cover;
+}
+.hero-section .hero-form {
+  margin: 6em auto;
+}
+.hero-section .hero-form .hero-form__link {
+  width: 50%;
+  margin: 0 0.5em 0 0;
+  padding: 5px;
+  font-size: 1.2em;
+  color: #ffa500;
+  border: none;
+  border-bottom: 2px solid #ffa500;
+  background: none;
+}
+.hero-section .hero-form .hero-form__link::-webkit-input-placeholder {
+  color: #ffa500;
+}
+.hero-section .hero-form .hero-form__btn-submit {
+  padding: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  background: #ffa500;
+}
+/* Links Section */
+.links-section {
+  padding: 80px 0;
+}
+.links-section h2 {
+  text-transform: uppercase;
+}
+.links-section .links-list {
+  width: 55%;
+  margin: 2em auto 0;
+}
+.links-section .links-list .link {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 1em 0;
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+}
+.links-section .links-list .link .link__url {
+  color: #aa1423;
+}
+.links-section .links-list .link .link__number {
+  color: #777;
+}
+/* Hits Section */
+.hits-section {
+  position: relative;
+  padding: 80px 0;
+  text-align: center;
+  background: #eee;
+}
+.hits-section::before {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 50px solid #fff;
+}
+.hits-section h2 {
+  text-transform: uppercase;
+}
+.hits-section .links-hits {
+  width: 250px;
+  display: block;
+  margin: 1.5em auto 0.5em;
+  padding: 5px;
+  text-align: center;
+  font-size: 1.7em;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #eee;
+}
+.hits-section .links-hits-description {
+  color: #777;
+}
+/* Footer Styles... */
+.footer {
+  height: 50px;
+}
+.footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer-link {
+  font-size: 1.5em;
+  color: #aa1423;
+}
+.footer .social-links li {
+  display: inline-block;
+}
+.footer .social-links a {
+  display: inline-block;
+  margin: 0 5px;
+  text-indent: -9999px;
+  color: #eee;
+}
+.footer .social-links__twitter,
+.footer .social-links__facebook {
+  width: 26px;
+  height: 26px;
+}
+.footer .social-links__twitter {
+  background: url("../../Assets/icon-twitter.png");
+}
+.footer .social-links__facebook {
+  background: url("../../Assets/icon-facebook.png");
+}

@@ -3,56 +3,71 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Chaordic</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<!-- Header Section -->
-	<header>
+	<header id="header" class="main-header">
 		<h1 class="logo">Chaordic</h1>
 	</header>
 
 	<!-- Hero Section -->
-	<section id="hero">
+	<section id="hero" class="hero-section">
 		<div class="wrapper">
 			<h2>Encurte seus links.</h2>
 			<p>
 				Links são longos. Encurte os links que você deseja compartilhar, e acompanhe enquanto viajam através da internet.
 			</p>
-			<form action="#">
-				<input type="text" placeholder="Cole seu link aki">
-				<input type="submit" value="Encurtar">
+			<form action="#" class="hero-form">
+				<input type="text" placeholder="Cole o seu link aqui" class="hero-form__link">
+				<input type="submit" value="Encurtar" class="hero-form__btn-submit">
 			</form>
 		</div>
 	</section>
 
 	<!-- Links Section -->
-	<section id="links">
+	<section id="links" class="links-section">
 		<div class="wrapper">
 			<h2>Top 5</h2>
 			<ul class="links-list">
 				<li class="link">
-					<a href="#" class="link__url"></a>
-					<span class="link__number"></span>
+					<a href="#" class="link__url">http://chr.dc/xyzxyz</a>
+					<span class="link__number">7.919</span>
+				</li>
+				<li class="link">
+					<a href="#" class="link__url">http://chr.dc/xyzxyz</a>
+					<span class="link__number">7.919</span>
+				</li>
+				<li class="link">
+					<a href="#" class="link__url">http://chr.dc/xyzxyz</a>
+					<span class="link__number">7.919</span>
+				</li>
+				<li class="link">
+					<a href="#" class="link__url">http://chr.dc/xyzxyz</a>
+					<span class="link__number">7.919</span>
 				</li>
 			</ul>
 		</div>
 	</section>
 
 	<!-- Hits Section -->
-	<section id="hits">
+	<section id="hits" class="hits-section">
 		<div class="wrapper">
 			<h2>Hits</h2>
 			<span class="links-hits">35.713.571</span>
-			<span>Cliques em links</span>
+			<span class="links-hits-description">Cliques em links</span>
 		</div>
 	</section>
 
 	<!-- Footer Section -->
-	<footer id="footer">
+	<footer id="footer" class="footer">
 		<div class="wrapper">
-			<a href="" >chr.dc</a>
-			<ul class="social links">
-				<li><a href="#">Twitter</a></li>
-				<li><a href="#">Facebook</a></li>
+			<a href="#" class="footer-link">chr.dc</a>
+			<ul class="social-links">
+				<li><a href="#" class="social-links__facebook">Twitter</a></li>
+				<li><a href="#" class="social-links__twitter">Facebook</a></li>
 			</ul>
 		</div>
 	</footer>
