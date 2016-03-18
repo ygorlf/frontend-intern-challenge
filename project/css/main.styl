@@ -23,6 +23,7 @@ h2
 h2
 	font 2.5em 'Roboto Slab', sans-serif
 	margin 0 0 .25em 0
+	text-transform uppercase
 
 p
 	max-width 550px
@@ -48,10 +49,10 @@ ul
 	height 50px
 	margin 0
 
-	.logo
-		margin-top -5px
-		text-indent -9999px
-		background url('../../Assets/logo-chaordic.png') no-repeat center
+.logo
+	margin-top -5px
+	text-indent -9999px
+	background url('../../Assets/logo-chaordic.png') no-repeat center
 
 /* Hero Section */
 .hero-section
@@ -63,66 +64,66 @@ ul
 	background url('../../Assets/background-home.jpg') no-repeat
 	background-size cover
 
-	.hero-form
-		margin 6em auto
+	h2
+		text-transform none
 
-		.hero-form__link
-			width 50%
-			margin 0 .5em 0 0
-			padding 5px
-			font-size 1.2em
-			color fifth-color
-			border none
-			border-bottom 2px solid fifth-color
-			background none
+.hero-form
+	margin 6em auto
 
-			@media(max-width: 480px)
-				display block
-				width 100%
-				margin 1em 0
-				text-align center
+.hero-form__link
+	width 50%
+	margin 0 .5em 0 0
+	padding 5px
+	font-size 1.2em
+	color fifth-color
+	border none
+	border-bottom 2px solid fifth-color
+	background none
 
-			&::-webkit-input-placeholder
-				color fifth-color
+	@media(max-width: 480px)
+		display block
+		width 100%
+		margin 1em 0
+		text-align center
 
-		.hero-form__btn-submit
-			padding 10px
-			cursor pointer
-			text-transform uppercase
-			color fourth-color
-			border none
-			background fifth-color
+	&::-webkit-input-placeholder
+		color fifth-color
 
-			@media(min-width: 480px)
-				padding 15px
+.hero-form__btn-submit
+	padding 10px
+	cursor pointer
+	text-transform uppercase
+	color fourth-color
+	border none
+	background fifth-color
+
+	@media(min-width: 480px)
+		padding 15px
 
 /* Links Section */
 .links-section
 	padding 80px 0
 
-	h2
-		text-transform uppercase
-	
-	.links-list
-		width 50%
-		margin 2em auto 0
+.links-list
+	width 50%
+	margin 2em auto 0
 
-		@media(max-width: 480px)
-			width 100%
-			margin 0 auto
+	@media(max-width: 480px)
+		width 100%
+		margin 0 auto
 
-		.link
-			display flex
-			justify-content space-between
-			margin 0 0 1em 0
-			padding 5px
-			border-bottom 1px solid third-color
+.link
+	display flex
+	justify-content space-between
+	margin 0 0 1em 0
+	padding 5px
+	border-bottom 1px solid third-color
 
-			.link__url
-				color primary-color
+.link__url
+	color primary-color
 
-			.link__number
-				color second-color
+.link__number
+	color second-color
 
 /* Hits Section */
 .hits-section
@@ -144,23 +145,20 @@ ul
 		
 		border-top 50px solid fourth-color
 
-	h2
-		text-transform uppercase
+.links-hits
+	width 250px
+	display block
+	margin 1.5em auto 0.5em
+	padding 5px
+	text-align center
+	font-size 1.7em
+	
+	border-radius 5px
+	background fourth-color
+	border 1px solid third-color
 
-	.links-hits
-		width 250px
-		display block
-		margin 1.5em auto 0.5em
-		padding 5px
-		text-align center
-		font-size 1.7em
-		
-		border-radius 5px
-		background fourth-color
-		border 1px solid third-color
-
-	.links-hits-description
-		color second-color
+.links-hits-description
+	color second-color
 
 /* Footer Styles... */
 .footer
@@ -171,26 +169,26 @@ ul
 		justify-content space-between
 		align-items center
 
-	.footer-link
-		font-size 1.5em
-		color primary-color
+.footer-link
+	font-size 1.5em
+	color primary-color
 
-	.social-links li
-		display inline-block
+.social-links li
+	display inline-block
 
-	.social-links a
-		display inline-block
-		margin 0 5px
-		text-indent -9999px
-		color third-color
+.social-links a
+	display inline-block
+	margin 0 5px
+	text-indent -9999px
+	color third-color
 
-	.social-links__twitter
-	.social-links__facebook
-		width 26px
-		height 26px
+.social-links__twitter
+.social-links__facebook
+	width 26px
+	height 26px
 
-	.social-links__twitter
-		background url('../../Assets/icon-twitter.png')
+.social-links__twitter
+	background url('../../Assets/icon-twitter.png')
 
-	.social-links__facebook
-		background url('../../Assets/icon-facebook.png')
+.social-links__facebook
+	background url('../../Assets/icon-facebook.png')

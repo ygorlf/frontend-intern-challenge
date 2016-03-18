@@ -16,6 +16,7 @@ h2 {
 h2 {
   font: 2.5em 'Roboto Slab', sans-serif;
   margin: 0 0 0.25em 0;
+  text-transform: uppercase;
 }
 p {
   max-width: 550px;
@@ -41,7 +42,7 @@ ul {
   height: 50px;
   margin: 0;
 }
-.main-header .logo {
+.logo {
   margin-top: -5px;
   text-indent: -9999px;
   background: url("../../Assets/logo-chaordic.png") no-repeat center;
@@ -55,10 +56,13 @@ ul {
   background: url("../../Assets/background-home.jpg") no-repeat;
   background-size: cover;
 }
-.hero-section .hero-form {
+.hero-section h2 {
+  text-transform: none;
+}
+.hero-form {
   margin: 6em auto;
 }
-.hero-section .hero-form .hero-form__link {
+.hero-form__link {
   width: 50%;
   margin: 0 0.5em 0 0;
   padding: 5px;
@@ -69,17 +73,17 @@ ul {
   background: none;
 }
 @media (max-width: 480px) {
-  .hero-section .hero-form .hero-form__link {
+  .hero-form__link {
     display: block;
     width: 100%;
     margin: 1em 0;
     text-align: center;
   }
 }
-.hero-section .hero-form .hero-form__link::-webkit-input-placeholder {
+.hero-form__link::-webkit-input-placeholder {
   color: #ffa500;
 }
-.hero-section .hero-form .hero-form__btn-submit {
+.hero-form__btn-submit {
   padding: 10px;
   cursor: pointer;
   text-transform: uppercase;
@@ -88,7 +92,7 @@ ul {
   background: #ffa500;
 }
 @media (min-width: 480px) {
-  .hero-section .hero-form .hero-form__btn-submit {
+  .hero-form__btn-submit {
     padding: 15px;
   }
 }
@@ -96,30 +100,27 @@ ul {
 .links-section {
   padding: 80px 0;
 }
-.links-section h2 {
-  text-transform: uppercase;
-}
-.links-section .links-list {
+.links-list {
   width: 50%;
   margin: 2em auto 0;
 }
 @media (max-width: 480px) {
-  .links-section .links-list {
+  .links-list {
     width: 100%;
     margin: 0 auto;
   }
 }
-.links-section .links-list .link {
+.link {
   display: flex;
   justify-content: space-between;
   margin: 0 0 1em 0;
   padding: 5px;
   border-bottom: 1px solid #eee;
 }
-.links-section .links-list .link .link__url {
+.link__url {
   color: #aa1423;
 }
-.links-section .links-list .link .link__number {
+.link__number {
   color: #777;
 }
 /* Hits Section */
@@ -141,10 +142,7 @@ ul {
   border-right: 50px solid transparent;
   border-top: 50px solid #fff;
 }
-.hits-section h2 {
-  text-transform: uppercase;
-}
-.hits-section .links-hits {
+.links-hits {
   width: 250px;
   display: block;
   margin: 1.5em auto 0.5em;
@@ -155,7 +153,7 @@ ul {
   background: #fff;
   border: 1px solid #eee;
 }
-.hits-section .links-hits-description {
+.links-hits-description {
   color: #777;
 }
 /* Footer Styles... */
@@ -167,27 +165,27 @@ ul {
   justify-content: space-between;
   align-items: center;
 }
-.footer .footer-link {
+.footer-link {
   font-size: 1.5em;
   color: #aa1423;
 }
-.footer .social-links li {
+.social-links li {
   display: inline-block;
 }
-.footer .social-links a {
+.social-links a {
   display: inline-block;
   margin: 0 5px;
   text-indent: -9999px;
   color: #eee;
 }
-.footer .social-links__twitter,
-.footer .social-links__facebook {
+.social-links__twitter,
+.social-links__facebook {
   width: 26px;
   height: 26px;
 }
-.footer .social-links__twitter {
+.social-links__twitter {
   background: url("../../Assets/icon-twitter.png");
 }
-.footer .social-links__facebook {
+.social-links__facebook {
   background: url("../../Assets/icon-facebook.png");
 }
