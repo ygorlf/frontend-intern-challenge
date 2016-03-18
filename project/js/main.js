@@ -33,13 +33,14 @@
 
 		btnSubmit.addEventListener('click', function(ev) {
 			ev.preventDefault();
-			var inputUrl = document.getElementById('url').value;
 
-			jsData.forEach(function(elem, index) {
-				if(elem.url.includes(inputUrl)) {
-					document.getElementById('url').value = elem.shortUrl;
+			for (var i = 0; i < jsData.length; i++) {
+				if (jsData[i].url.search(new RegExp(document.getElementById('url').value)) !== -1) {
+					document.getElementById('url').value = jsData[i].shortUrl;
+					console.log(jsData[i]);
+					break;
 				}
-			});
+			}
 		});
 
 		topFive(jsData);
