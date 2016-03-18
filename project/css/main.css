@@ -26,6 +26,7 @@ a {
   text-decoration: none;
 }
 ul {
+  padding: 0;
   list-style: none;
 }
 /* Wrapper Styles */
@@ -67,6 +68,14 @@ ul {
   border-bottom: 2px solid #ffa500;
   background: none;
 }
+@media (max-width: 480px) {
+  .hero-section .hero-form .hero-form__link {
+    display: block;
+    width: 100%;
+    margin: 1em 0;
+    text-align: center;
+  }
+}
 .hero-section .hero-form .hero-form__link::-webkit-input-placeholder {
   color: #ffa500;
 }
@@ -78,6 +87,11 @@ ul {
   border: none;
   background: #ffa500;
 }
+@media (min-width: 480px) {
+  .hero-section .hero-form .hero-form__btn-submit {
+    padding: 15px;
+  }
+}
 /* Links Section */
 .links-section {
   padding: 80px 0;
@@ -86,8 +100,14 @@ ul {
   text-transform: uppercase;
 }
 .links-section .links-list {
-  width: 55%;
+  width: 50%;
   margin: 2em auto 0;
+}
+@media (max-width: 480px) {
+  .links-section .links-list {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 .links-section .links-list .link {
   display: flex;
