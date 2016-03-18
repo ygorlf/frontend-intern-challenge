@@ -30,21 +30,23 @@
 	xhr.onload = function() {
 		var data = xhr.responseText;
 		jsData = JSON.parse(data);
-
-		btnSubmit.addEventListener('click', function(ev) {
-			ev.preventDefault();
-
-			for (var i = 0; i < jsData.length; i++) {
-				if (jsData[i].url.search(new RegExp(document.getElementById('url').value)) !== -1) {
-					document.getElementById('url').value = jsData[i].shortUrl;
-					console.log(jsData[i]);
-					break;
-				}
-			}
-		});
-
 		topFive(jsData);
 	};
 
 	xhr.send();
+
+	btnSubmit.addEventListener('click', function(ev) {
+			ev.preventDefault();
+
+			var randomUrlSource = ['0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f','g','h','i','j'];
+			var shortenerUrl = 'http://chr.dc/';
+
+			for(var i = 0; i<5; i++) {
+				shortenerUrl += randomUrlSource[Math.floor(Math.random()*randomUrlSource.length)];
+			}
+
+			if (document.getElementById('url').value.startsWith('www.')) {
+				document.getElementById('url').value = shortenerUrl;
+			}
+		});
 })();
